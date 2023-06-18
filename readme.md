@@ -34,7 +34,7 @@ Supports RPI4B OOTB
 
 **Download**
 
-1.) Download the precompiled binary [HERE](https://github.com/jgarff/rpi_ws281x)
+1.) Download the precompiled binary [HERE](https://github.com/K4HVH/LLCBKv2/releases/)
 
 2.) Run and have fun
     
@@ -42,9 +42,24 @@ Supports RPI4B OOTB
 
 - 2 PWM Channels (0 and 1) (Pin 18/19)
 
+- 3 Input Pins (GPIO 17, 27, 22)
+
 - Supports SK6812/WS2811/WS2812
 
 - NOTE: GUI HAS NOT BEEN ADDED YET, STILL WIP
+
+## Changelog
+
+***Release v0.2*** 
+- Implemented input handling (GPIO 17, 27, 22)
+- Added braking / braking + indicating animations (Mode 2, 25)
+- Improved cleanup
+- Fixed shutdown and led halt
+- Implemented mode handling (Desired and Running)
+- Improvements to animations
+- Fixed some issues with channel 1
+- Other fixes and tweaks
+
 
 ## Acknowledgements
 
