@@ -21,9 +21,23 @@ class iter {
 };
 
 struct globals {
-    bool rightHalt = false;
-    bool leftHalt = false;
+    struct right {
+        bool halt = false;
+        bool compBrakeAnim = false;
+        int desired = 0;
+        int running = 0;
+    } right;
+
+    struct left {
+        bool halt = false;
+        bool compBrakeAnim = false;
+        int desired = 0;
+        int running = 0;
+    } left;
+
     bool shutdown = false;
+    int ledCol = 0xFF00A0;
+
 } globals;
 
 struct rings {
