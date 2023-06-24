@@ -50,6 +50,10 @@ Supports RPI4B OOTB
 
 ## Changelog
 
+***Release v0.3*** 
+- Changed delay
+- Changed brightness
+
 ***Release v0.2*** 
 - Implemented input handling (GPIO 17, 27, 22)
 - Added braking / braking + indicating animations (Mode 2, 25)
