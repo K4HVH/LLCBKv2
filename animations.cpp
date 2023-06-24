@@ -54,7 +54,7 @@ void anims::mode1(ws2811_t string, int ch)
 
             // Push updated colors
             ws2811_render(&string);
-            std::this_thread::sleep_for(std::chrono::milliseconds(40));
+            std::this_thread::sleep_for(std::chrono::milliseconds(60));
 
             if (ch == 0) {
                 for (const int& value : it.LEDS_LARGE(1, 1, 8)) {
@@ -122,7 +122,7 @@ void anims::mode15(ws2811_t string, int ch)
 
             // Push updated colors
             ws2811_render(&string);
-            std::this_thread::sleep_for(std::chrono::milliseconds(40));
+            std::this_thread::sleep_for(std::chrono::milliseconds(60));
 
             if (ch == 0) {
                 for (const int& value : it.LEDS_LARGE(1, 1, 8)) {
@@ -208,7 +208,7 @@ void anims::mode2(ws2811_t string, int ch)
 
             // Push updated colors
             ws2811_render(&string);
-            std::this_thread::sleep_for(std::chrono::milliseconds(40));
+            std::this_thread::sleep_for(std::chrono::milliseconds(60));
 
             if (ch == 0) {
                 if (i == 7) {
@@ -286,7 +286,7 @@ void anims::mode25(ws2811_t string, int ch)
 
             // Push updated colors
             ws2811_render(&string);
-            std::this_thread::sleep_for(std::chrono::milliseconds(40));
+            std::this_thread::sleep_for(std::chrono::milliseconds(60));
 
             if (ch == 0) {
                 if (i == 7) {

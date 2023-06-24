@@ -11,7 +11,7 @@
 #include "rpi_ws281x-master/ws2811.h"
 #include "animations.cpp"
 
-// Global Vars
+// Instatiating shit
 static ws2811_t ledString;
 anims an;
 
@@ -34,13 +34,13 @@ void ledInit()
     ledString.channel[0].gpionum = 18;
     ledString.channel[0].count = 482;
     ledString.channel[0].invert = 0;
-    ledString.channel[0].brightness = 10;
+    ledString.channel[0].brightness = 255;
     ledString.channel[0].strip_type = WS2811_STRIP_GRB;
 
     ledString.channel[1].gpionum = 19;
     ledString.channel[1].count = 482;
     ledString.channel[1].invert = 0;
-    ledString.channel[1].brightness = 10;
+    ledString.channel[1].brightness = 255;
     ledString.channel[1].strip_type = WS2811_STRIP_GRB;
 
     if (ws2811_init(&ledString) != WS2811_SUCCESS)
